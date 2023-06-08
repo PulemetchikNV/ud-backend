@@ -21,6 +21,10 @@ import { AuthController } from './controllers/auth/auth.controller';
 import { AcceptanceController } from './controllers/acceptance/acceptance.controller';
 import { OrganizationsController } from './controllers/organizations/organizations.controller';
 import { WarehousesController } from './controllers/warehouses/warehouses.controller';
+import { InventarizationController } from './inventarization/inventarization.controller';
+import { InventarizationController } from './controllers/inventarization/inventarization.controller';
+import { ProductsController } from './controllers/products/products.controller';
+import { DisposalController } from './controllers/disposal/disposal.controller';
 @Module({
   imports: [
     DatabaseModule,
@@ -36,7 +40,7 @@ import { WarehousesController } from './controllers/warehouses/warehouses.contro
     FbsModule,
     AuthModule,
   ],
-  controllers: [AppController, UsersController, AuthController, AcceptanceController, OrganizationsController, WarehousesController],
+  controllers: [AppController, UsersController, AuthController, AcceptanceController, OrganizationsController, WarehousesController, InventarizationController, ProductsController, DisposalController],
   providers: [
     AppService,
     {

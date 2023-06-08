@@ -15,4 +15,7 @@ export class ProductsService {
     @Inject(ORGANIZATION_PRODUCT_REPOSITORY)
     private readonly orgProductRepository: typeof OrganizationProduct,
   ) {}
+  async findAll(): Promise<Product[]> {
+    return await this.productRepository.findAll();
+  }
 }
